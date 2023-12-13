@@ -1,0 +1,14 @@
+CC = gcc
+CPP =g++
+AR = ar
+CC_OPTS=-O2 -fPIC -Wall -Werror -Wunused -Wstrict-prototypes -Wmissing-prototypes -Wmissing-declarations -Wno-error=stringop-truncation -DHSU=1 -DOPAL_BFCP=1
+CPP_OPTS=-O2 -fPIC -Wall -Werror -Wunused -Wno-error=stringop-truncation -DHSU=1 -DOPAL_BFCP=1
+LIBS=-lpthread
+INCS_DIR=-I /home/xtp/sip-gateway/thirdparty/BFCP/libbfcp
+SAMPLES_INCS_DIR= -I include
+SAMPLES_LIBS=lib/libbfcprel.a
+DELIVERY_LIBS=lib
+DELIVERY_BINS=bin
+DELIVERY_INCLUDES=include
+DELIVERY_OBJS=rel/objs
+DELIVERY_DOCS=doc/libbfcp
