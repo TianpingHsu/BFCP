@@ -10,6 +10,12 @@ Repackaged and modified for IVeS solutions. We mostly added support for BFCP ove
 
 The instructions below were tested on CentOS 6 64 bits.
 
+0- quick test with samples
+    
+    $ cd BFCP && make -j8             # to build bfcp library
+    $ cd libbfcp/samples && make -j8  # to build the sample code
+
+
 1- Install prerequistes
 
     # yum install gcc-c++, make, rpm-build
