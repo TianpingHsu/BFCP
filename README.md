@@ -5,6 +5,10 @@ An open source BFCP (Binary Floor Control Protocol, RFC4582) library written in 
 and C++. Fork from the libbfcp written by Lorenzo Miniero (see Confiance open source project).
 Repackaged and modified for IVeS solutions. We mostly added support for BFCP over UDP.
 
+code sources:
+* https://github.com/meetecho/libbfcp
+* https://github.com/InteractiviteVideoEtSystemes/libbfcp
+
 
 ## Build instructions
 
