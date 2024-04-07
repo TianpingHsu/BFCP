@@ -882,8 +882,8 @@ bool BFCPConnection::Client2ServerInfo::SetAddress(const char *addrstr,
                                                    socklen_t &addrlen) {
     if (!addrstr) return false;
     /* Try IP V4 first */
-    if (inet_pton(AF_INET, addrstr, addr) == 1) {
-        struct sockaddr_in *addrv4 = (struct sockaddr_in *)addr;
+    struct sockaddr_in *addrv4 = (struct sockaddr_in *)addr;
+    if (inet_pton(AF_INET, addrstr, &(addrv4->sin_addr)) != 0) {
 
         addrlen = sizeof(struct sockaddr_in);
         addrv4->sin_port = htons(port);
